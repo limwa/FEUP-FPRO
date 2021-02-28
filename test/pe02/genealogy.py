@@ -1,0 +1,1 @@
+def genealogy(l1): return [t for t in [(sorted([person[0] for person in l1 if person[1] == relationship], key=lambda x: x.lower()), relationship) for relationship in ["sibling", "parent", "cousin", "grandparent"]] if len(t[0]) > 0] # "os one-liners do Miguel" :(

@@ -1,0 +1,1 @@
+def collisions(alist): return { sum([int(digit) for digit in str(el1)]) % 8 : len([1 for el2 in alist if sum([int(digit) for digit in str(el1)]) % 8 == sum([int(digit) for digit in str(el2)]) % 8]) for el1 in alist } # "os one-liners do Miguel" :(

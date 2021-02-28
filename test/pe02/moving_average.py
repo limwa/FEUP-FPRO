@@ -1,0 +1,1 @@
+def moving_average(alist, n): return [] if len(alist) < 3 or n < 3 else [round(sum(alist[max(0, i - n // 2):i] + alist[i + 1:min(i + n // 2, len(alist)) + 1]) / (n - 1), 2) for i in range(n // 2, len(alist) - n // 2)] # "os one-liners do Miguel" :(

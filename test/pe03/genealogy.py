@@ -1,0 +1,1 @@
+def calculator(expr, sid = lambda tup: tuple(x // __import__('math').gcd(*tup) for x in tup)): return expr if len(expr) == 2 else sid({ '*': lambda x, y: (x[0] * y[0], x[1] * y[1]), '/': lambda x, y: (x[0] * y[1], x[1] * y[0]) }[expr[1]](calculator(expr[0]), calculator(expr[2]))) # "os one-liners do Miguel" :(

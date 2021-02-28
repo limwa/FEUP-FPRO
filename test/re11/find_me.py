@@ -1,0 +1,1 @@
+def find_me(f, limits): return 1 if f((limits[0] + limits[1]) // 2) == 0 else 1 + (find_me(f, (limits[0], (limits[0] + limits[1]) // 2)) if f((limits[0] + limits[1]) // 2) == -1 else find_me(f, ((limits[0] + limits[1]) // 2, limits[1]))) # "os one-liners do Miguel" :(

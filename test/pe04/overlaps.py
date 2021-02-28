@@ -1,0 +1,1 @@
+def overlaps(segments): return { (i, j) for i in range(len(segments) - 1) for j in range(i + 1, len(segments)) if not segments[i][0] > segments[j][1] and not segments[i][1] < segments[j][0] } # "os one-liners do Miguel" :(

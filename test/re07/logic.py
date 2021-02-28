@@ -1,0 +1,1 @@
+def logic(s, operations): return logic({ "and": lambda x, y: x & y, "or": lambda x, y: x | y, "xor": lambda x, y: x ^ y, "not": lambda x, y: y - x }[list(operations)[0]](s, operations[list(operations)[0]]), { key : value for key, value in operations.items() if key != list(operations)[0]}) if len(operations) > 0 else s # "os one-liners do Miguel" :(

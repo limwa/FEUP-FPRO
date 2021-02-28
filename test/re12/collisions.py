@@ -1,0 +1,1 @@
+def number_of_collisions(objects): return sum(1 for r1 in objects for r2 in objects if r1 != r2 and not (r2['y1'] < r2['y2'] < r1['y1'] or r2['y2'] > r2['y1'] > r1['y2'] or r2['x1'] < r2['x2'] < r1['x1'] or r2['x2'] > r2['x1'] > r1['x2'])) // 2 # "os one-liners do Miguel" :(

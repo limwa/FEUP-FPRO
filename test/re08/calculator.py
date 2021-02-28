@@ -1,0 +1,1 @@
+def calculator(expr): return expr if not isinstance(expr, tuple) else { '-': lambda x, y: x - y, '+': lambda x,y: x + y, '*': lambda x, y: x * y }[expr[1]](calculator(expr[0]), calculator(expr[2])) # "os one-liners do Miguel" :(

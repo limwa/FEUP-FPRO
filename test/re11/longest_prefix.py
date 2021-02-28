@@ -1,0 +1,1 @@
+def longest_prefix(words, prefix = None): return (prefix or words[0]) if all(x.startswith(prefix or words[0]) for x in words) else longest_prefix(words, (prefix or words[0])[:-1]) # "os one-liners do Miguel" :(

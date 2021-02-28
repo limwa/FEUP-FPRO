@@ -1,0 +1,1 @@
+def reduce_map_filter(args): return args if isinstance(args, list) else (lambda x: x if isinstance(x, int) else list(x))({ "map": map, "filter": filter, "reduce": __import__('functools').reduce }[args[0]](args[1], reduce_map_filter(args[2]))) # "os one-liners do Miguel" :(

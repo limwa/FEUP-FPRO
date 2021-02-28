@@ -1,0 +1,1 @@
+def map_reduce(n1, n2): return (lambda ft, nums: ft.reduce(lambda acc, value: acc * value if acc * value < 50 else acc + value , nums[1:], nums[0]))(__import__('functools'), list(map(lambda x: x ** 2, filter(lambda x: x % 2 == 1, range(n1, n2))))) # "os one-liners do Miguel" :(
